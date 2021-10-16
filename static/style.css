@@ -273,7 +273,7 @@ hr {
   }
 
   #about {
-    margin: 43px 40px;
+    margin: 43px 0;
   }
 
   .about__image {
@@ -295,7 +295,7 @@ hr {
 
   #menu {
     display: block;
-    margin: 22px 70px;
+    margin: 22px 38px;
   }
 
   .menu__items {
@@ -317,7 +317,7 @@ hr {
   }
 
   #contact {
-    margin: 10px 30px;
+    margin: 10px 17px;
     padding: 24px 15px;
   }
 
@@ -325,6 +325,14 @@ hr {
     margin: 0;
     font-weight: normal;
     font-size: 33px;
+  }
+  
+  .input__info {
+    width: 90%;
+  }
+  
+  form {
+    margin-top: 35px;
   }
 
   .footer {
