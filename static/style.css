@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+header {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  padding: 3px 17px;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 4px;
+}
+
+.brand__name {
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 17px;
+}
+
+.nav__links li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.img__title {
+  height: 91vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.img__title img {
+  height: inherit;
+  width: inherit;
+}
+
+.bottom_right {
+  position: absolute;
+  bottom: 30px;
+  right: 3%;
+  font-size: 32px;
+  font-weight: 530;
+  font-family: Verdana, sans-serif;
+  line-height: 2;
+  letter-spacing: 7px;
+  color: rgb(102, 102, 102);
+}
+
+#about {
+  margin: 70px 130px;
+  display: flex;
+  align-items: center;
+}
+
+.about__image {
+  width: 40%;
+  height: auto;
+}
+
+.about__info {
+  margin: 5px 40px;
+}
+
+.about__info h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: "Playfair Display";
+  letter-spacing: 4px;
+}
+
+.about__info h5 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  letter-spacing: 4px;
+  line-height: 1.5;
+}
+
+.about__info p {
+  text-align: justify;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+hr {
+  border: 1px solid rgba(231, 232, 233);
+}
+
+#menu {
+  display: flex;
+  margin: 80px 70px;
+  align-items: center;
+}
+
+.menu__items {
+  padding: 10px 70px;
+}
+
+.menu__items h1 {
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Playfair Display";
+  letter-spacing: 3.5px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.menu__items h4 {
+  margin: 10px 0;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.menu__items p {
+  color: #7e7d7d;
+}
+
+.menu__image {
+  width: 38%;
+  height: auto;
+}
+
+#contact {
+  margin: 20px 40px;
+  padding: 30px 15px;
+}
+
+#contact h1 {
+  margin: 10px 0;
+  font-size: 35px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+}
+
+#contact p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.input__info {
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 11px;
+  margin-bottom: 20px;
+  margin-top: 3px;
+  outline: none;
+  border: none;
+  border-bottom: 0.5px solid #ccc;
+  background: transparent;
+}
+
+.button {
+  margin: 5px 8px;
+  padding: 17px 35px;
+  cursor: pointer;
+  background-color: rgb(233, 231, 231);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: rgb(230, 227, 227);
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: sans-serif;
+  background-color: rgb(122, 131, 141);
+  color: aliceblue;
+}
+
+/* Media Query For Tablet */
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 14px;
+  }
+
+  .bottom_right {
+    font-size: 27px;
+  }
+
+  #about {
+    margin: 70px 70px;
+  }
+
+  .about__info h2 {
+    font-size: 33px;
+  }
+
+  .about__info h5 {
+    font-size: 13.5px;
+    letter-spacing: 3px;
+  }
+
+  .menu__items {
+    padding: 10px 30px 10px 0;
+  }
+
+  .menu__items h1 {
+    font-size: 34px;
+  }
+
+  .menu__items h4 {
+    font-size: 19.5px;
+    letter-spacing: 1.75px;
+  }
+
+  .menu__image {
+    width: 43.5%;
+  }
+
+  #contact h1 {
+    font-weight: normal;
+  }
+
+  .footer {
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+/* Media Query For Mobile */
+@media only screen and (max-width: 580px) {
+  header {
+    padding: 5px 5px;
+    margin: 2px 2px;
+    display: block;
+    text-align: center;
+  }
+
+  .brand__name {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .bottom_right {
+    font-size: 24px;
+  }
+
+  #about {
+    margin: 43px 40px;
+  }
+
+  .about__image {
+    display: none;
+  }
+
+  .about__info h2 {
+    font-size: 30px;
+  }
+
+  .about__info h5 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .about__info p {
+    font-size: 20px;
+  }
+
+  #menu {
+    display: block;
+    margin: 22px 70px;
+  }
+
+  .menu__items {
+    padding: 10px 0;
+  }
+
+  .menu__items h1 {
+    font-size: 34px;
+  }
+
+  .menu__items h4 {
+    font-size: 19.5px;
+    letter-spacing: 1.75px;
+  }
+
+  .menu__image {
+    width: 100%;
+    margin: 15px 0 30px 0;
+  }
+
+  #contact {
+    margin: 10px 30px;
+    padding: 24px 15px;
+  }
+
+  #contact h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 33px;
+  }
+
+  .footer {
+    height: 35px;
+    font-size: 14px;
+  }
+}
